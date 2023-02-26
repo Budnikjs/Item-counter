@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.counter-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+    width: 110px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.counter-container .btnCountPlus, .btnCountMinus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    background-color: rgb(164, 180, 250);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.counter-container .btnCountMinus{
+    font-size: 45px;
+}
+.counter-container .btnCountPlus:hover, .btnCountMinus:hover{
+    background-color: rgb(18, 61, 255);
+    transform: scale(1.05);
+}
+.counter-container .btnCountPlus:active, .btnCountMinus:active{
+    transform: scale(1);
+}
+
+.counter-container .counterVal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    overflow:hidden;
+    border: none;
+}
